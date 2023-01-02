@@ -19,6 +19,15 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 
+// cors 
+app.use(
+  cors({
+    origin: ["http://localhost:3000"],
+    credentials: true,
+  })
+);
+
+
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));   
 
