@@ -5,7 +5,7 @@ import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import Forgot from "./pages/auth/Forgot";
 import Reset from "./pages/auth/Reset";
-// import Dashboard from "./pages/dashboard/Dashboard";
+import Dashboard from "./pages/dashboard/Dashboard";
 // import AddProduct from "./pages/addProduct/AddProduct";
 import Sidebar from "./components/sidebar/Sidebar";
 import Layout from "./components/layout/Layout";
@@ -47,7 +47,7 @@ function App() {
           element={
             <Sidebar>
               <Layout>
-                {/* <Dashboard /> */}
+                <Dashboard />
               </Layout>
             </Sidebar>
           }
