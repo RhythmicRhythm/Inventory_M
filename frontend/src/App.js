@@ -6,7 +6,7 @@ import Register from "./pages/auth/Register";
 import Forgot from "./pages/auth/Forgot";
 import Reset from "./pages/auth/Reset";
 import Dashboard from "./pages/dashboard/Dashboard";
-// import AddProduct from "./pages/addProduct/AddProduct";
+import AddProduct from "./pages/addProduct/AddProduct";
 import Sidebar from "./components/sidebar/Sidebar";
 import Layout from "./components/layout/Layout";
 import { useDispatch } from "react-redux";
@@ -15,6 +15,9 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { getLoginStatus } from "./services/authService";
 import { SET_LOGIN } from "./redux/features/auth/authSlice";
+import Profile from "./pages/profile/Profile";
+import EditProfile from "./pages/profile/EditProfile";
+import Contact from "./pages/contact/Contact";
 
 
 
@@ -58,7 +61,7 @@ function App() {
           element={
             <Sidebar>
               <Layout>
-                {/* <AddProduct /> */}
+                <AddProduct />
               </Layout>
             </Sidebar>
           }
@@ -83,7 +86,7 @@ function App() {
             </Sidebar>
           }
         /> */}
-        {/* <Route
+        <Route
           path="/profile"
           element={
             <Sidebar>
@@ -112,7 +115,7 @@ function App() {
               </Layout>
             </Sidebar>
           }
-        /> */}
+        />
 
       </Routes>
     </BrowserRouter>
