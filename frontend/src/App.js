@@ -18,6 +18,7 @@ import { SET_LOGIN } from "./redux/features/auth/authSlice";
 import Profile from "./pages/profile/Profile";
 import EditProfile from "./pages/profile/EditProfile";
 import Contact from "./pages/contact/Contact";
+import ProductDetail from "./components/product/productDetail/ProductDetail";
 
 
 
@@ -66,7 +67,7 @@ function App() {
             </Sidebar>
           }
         />
-        {/* <Route
+        <Route
           path="/product-detail/:id"
           element={
             <Sidebar>
@@ -76,7 +77,7 @@ function App() {
             </Sidebar>
           }
         />
-        <Route
+        {/* <Route
           path="/edit-product/:id"
           element={
             <Sidebar>
