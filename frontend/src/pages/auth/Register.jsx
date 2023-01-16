@@ -68,10 +68,11 @@ const Register = () => {
       {/* {isLoading && <Loader />} */}
       <Card>
         <div className={styles.form}>
-          <div className="--flex-center">
+          {/* <div className="--flex-center">
             <TiUserAddOutline size={35} color="#999" />
-          </div>
-          <h2>Register</h2>
+          </div> */}
+          <h2>Hi Welcome</h2>
+          <p>fill in the details to get registered</p>
 
           <form 
           onSubmit={register}
@@ -114,7 +115,7 @@ const Register = () => {
           </form>
 
           <span className={styles.register}>
-            <Link to="/">Home</Link>
+            <Link to="/" className="{styles.linkH}">Home</Link>
             <p> &nbsp; Already have an account? &nbsp;</p>
             <Link to="/login">Login</Link>
           </span>
